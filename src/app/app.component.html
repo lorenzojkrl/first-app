@@ -1,2 +1,7 @@
 <h1>{{ title }}</h1>
-<app-test></app-test>
+<app-test *ngIf="isVisible"></app-test>
+<app-test *ngIf="text === 'yellow'"></app-test>
+
+<button (click)="onClick()">Click Me!</button>
+
+<div *ngFor="let fruit of fruitsList">{{ fruit }}</div>
